@@ -38,7 +38,7 @@ _________________________________________________________
 ### Download/install Moonraker 🌒
 From the install menu, download Moonraker.
 
-*During the download, it will ask for different parameters, unless you know what you're doing, it's recommended to keep them at default.*
+*During the download, it will ask for different parameters. Unless you know what you're doing, it's recommended to keep them at default.*
 
 **If you made more then 1 instance of klipper, you'll have to download Moonraker for all of the instances**
 
@@ -49,13 +49,25 @@ _________________________________________________________
 ### Download/install Mainsail ⛵
 Through the install menu, download Mainsail
 
-*Leave all of the parameters it will ask for at default unless you know what you're doing*
+*Leave all of the parameters at default unless you know what you're doing*
 
 ### Download/install Fluidd 🌊
 The steps for downloading Fluidd are the same as for Mainsail.
 _________________________________________________________
-## Access the printer
+## Flash Klipper and Find Board IDs
+**This part is important**
+
+*If you have a CAN toohead board, you'll need to follow [this guide](https://canbus.esoterical.online/) for setting up CANBus. I personally followed it and it does work (as of Feb. 2025). Reconnect back with us at "Acces the Printer" section*
+
+*If you don't have a CAN toolhead board or are using a USB one, then you can stay on this page.*
+_________________________________________________________
+### Flash Klipper
+Through Kiauh, go to "Advanced" and "Build Only". Compile the firmware for you board, I included pictures for most common boards in the Board Builds folder c:
+
+## Access the Printer
 Remember the IP address you used to SSH into your device? You'll need it again!
 
-Paste it into the search bar of your browser:
+Paste it into the search bar of your browser and enter:
 ![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/IP-example.png)
+
+Mine is 192.168.0.19, but yours is probably different. 
