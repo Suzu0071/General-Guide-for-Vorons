@@ -58,4 +58,4 @@ _________________________________________________________
 Remember the IP address you used to SSH into your device? You'll need it again!
 
 Paste it into the search bar of your browser:
-
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/IP-example.png)
