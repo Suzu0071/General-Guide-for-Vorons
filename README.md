@@ -26,7 +26,7 @@ Now that Kiauh is installed, we can start downloading Klipper itself.
 
 The order of downloading is Klipper, Moonraker, Mainsail/Fluidd. This is important since it can sometimes show errors (atleast in my experience).
 _________________________________________________________
-### Download/install Klipper
+### Download/install Klipper 🐟
 Navigating through Kiauh is done with number (you probably already figured that out). To install, choose "Install" on the main menu.
 
 From the install menu, download Klipper.
@@ -35,12 +35,27 @@ From the install menu, download Klipper.
 
 Installing Klipper may take a while depending on internet speeds and other factors. After it's installed, you should be directed back to the install menu, if you didn't get any errors, proceed to downloading Moonraker.
 _________________________________________________________
-### Download/install Moonraker
+### Download/install Moonraker 🌒
 From the install menu, download Moonraker.
 
 *During the download, it will ask for different parameters, unless you know what you're doing, it's recommended to keep them at default.*
 
+**If you made more then 1 instance of klipper, you'll have to download Moonraker for all of the instances**
+
 After the installation, you'll be redirected to the install menu, if no errors showed up, proceed to the next step. 
 _________________________________________________________
-### Download/install 
-**If you made more then 1 instance of klipper, you'll have to download Moonraker for all of the instances**
+<ins>For the next part you'll need to choose what end you want to use: Mainsail or Fluidd. There isn't a better or worse option.</ins> To prevent issues, only get one of them.
+_________________________________________________________
+### Download/install Mainsail ⛵
+Through the install menu, download Mainsail
+
+*Leave all of the parameters it will ask for at default unless you know what you're doing*
+
+### Download/install Fluidd 🌊
+The steps for downloading Fluidd are the same as for Mainsail.
+_________________________________________________________
+## Access the printer
+Remember the IP address you used to SSH into your device? You'll need it again!
+
+Paste it into the search bar of your browser:
+
