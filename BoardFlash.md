@@ -125,10 +125,17 @@ But paste the ID you got from previous steps instead the "meow" :3
 
 *Ignore the errors that will show up, if at the end it shows "Complete", everything is fine.*
 
-Press RESET and run "ls /dev/serial/by-id/" to see if everything truly worked. You should now see a usb-Klipper... device.
+Press RESET and run "ls /dev/serial/by-id/" to see if everything truly worked. You should now see a usb-Klipper... device. If you see a usb-katapult device, redo the steps for klipper compilation and flashing.
+
+After you got everything working, turn on Klipper:
+```
+sudo service klipper start
+```
 _________________________________________________________
 *Congrats, you just completed the hardest part of your software journey* :D
 
-*You can sit back and relax as we glide through the rest of the guide.*
+*You can grab some cookies and tea as we glide through the rest of the guide.*
 
-<sub>If any problems arise, don't hesitate to reach out to the guys (and gals) at the Voron Discord, Reddit, and other platforms. Or DM me directly through Discord: @Suzu_0071</sub>
+<sub>If any problems arise, don't hesitate to reach out to the guys (and gals) at the Voron Discord, Reddit, and other platforms. Or DM me directly through Discord: @suzu00071</sub>
+
+[Next Step](https://github.com/Suzu0071/General-Guide-for-Vorons/tree/main?tab=readme-ov-file#access-the-printer) <sub>P.S. You're doing awesome!</sub>
