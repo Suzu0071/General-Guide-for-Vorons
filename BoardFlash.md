@@ -56,11 +56,15 @@ STM32  boards will show up as "STM device in dfu", RP2040 will show up as "Pi RP
 _________________________________________________________
 <ins>If the board doesn't show up, check that you have everything plugged in correctly and try booting into DFU mode again</ins>.
 _________________________________________________________
-Now enter Kiauh again:
+Exit katapult:
+```
+cd
+```
+And enter Kiauh again:
 ```
 ./kiauh/kiauh.sh
 ```
-And go to the advanced menu.
+Go to the advanced menu.
 
 Then, "Find MCU ID" and choose "USB (DFU)".
 
