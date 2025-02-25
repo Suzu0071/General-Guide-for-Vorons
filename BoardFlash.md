@@ -125,7 +125,9 @@ But paste the ID you got from previous steps instead the "meow" :3
 
 *Ignore the errors that will show up, if at the end it shows "Complete", everything is fine.*
 
-Press RESET and run "ls /dev/serial/by-id/" to see if everything truly worked. You should now see a usb-Klipper... device. If you see a usb-katapult device, redo the steps for klipper compilation and flashing.
+Press RESET and run "ls /dev/serial/by-id/" to see if everything truly worked. You should now see a usb-Klipper... device. Copy that ID again, you'll be using it when you make your config file. 
+
+*If you see a usb-katapult device, redo the steps for klipper compilation and flashing.*
 
 After you got everything working, turn on Klipper:
 ```
