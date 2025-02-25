@@ -1,4 +1,5 @@
 # Board Flashing and MCU IDs
+If you have multiple boards, its advised to unplug every but one, and complete this for every board separately.
 _________________________________________________________
 ## Flash Katapult
 [Katapult](https://github.com/Arksine/katapult) is a utility for flashing board more easily + doing CAN bus. You're here since you wont be using a CAN board, so we won't go into that and proceed with normal board flashing c:
@@ -52,3 +53,21 @@ lsusb
 ```
 
 STM32  boards will show up as "STM device in dfu", RP2040 will show up as "Pi RP2 Boot".
+_________________________________________________________
+<ins>If the board doesn't show up, check that you have everything plugged in correctly and try booting into DFU mode again</ins>.
+_________________________________________________________
+Now enter Kiauh again:
+```
+./kiauh/kiauh.sh
+```
+And go to the advanced menu.
+
+Then, "Find MCU ID" and choose "USB (DFU)".
+
+The ID of the board will be displayed (e.g. 0483:df11), copy it to a notepad.
+
+**This part is important, pay attention**
+```
+sudo dfu-util -R -a 0 -s 0x08000000:leave -D ~/katapult/out/katapult.bin -d 0483:df11
+```
+Change the 0483:
