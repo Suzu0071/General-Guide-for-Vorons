@@ -32,3 +32,23 @@ Heres RP2040 based boards (e.g. SKR pico):
 ![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/RP2040-based-Katapult-Bin.png)
 _________________________________________________________
 ### Flash Katapult
+First, enter DFU mode:
+
+**For STM32 boards:**
+
+Read the instructions for your specific board, but most board will have a BOOT button/jumper and a RESET button. Hold down BOOT (or insert a jumper on it) and press RESET.
+
+**For RP2040 boards:**
+
+Read the instructions for your specific board, but the process is the same as for STM32 boards, short the BOOT and press RESET. 
+
+Heres an example for SKR pico:
+
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/SKR-pico-DFU.png)
+
+Now check that the board went into DFU by running:
+```
+lsusb
+```
+
+STM32  boards will show up as "STM device in dfu", RP2040 will show up as "Pi RP2 Boot".
