@@ -68,7 +68,7 @@ Go to the advanced menu.
 
 Then, "Find MCU ID" and choose "USB (DFU)".
 
-The ID of the board will be displayed (e.g. 0483:df11), copy it to a notepad.
+The ID of the board will be displayed (e.g. 0483:df11), copy it to a notepad. You can exit Kiauh.
 
 **This part is important, pay attention**
 
@@ -84,3 +84,9 @@ cd ~/katapult
 make flash FLASH_DEVICE=0483:df11
 ```
 Change the 0483:df11 to your ID.
+_________________________________________________________
+To check if the flashing was successful, run:
+```
+ls /dev/serial/by-id/
+```
+
