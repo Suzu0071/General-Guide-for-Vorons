@@ -62,8 +62,8 @@ _________________________________________________________
 *If you don't have a CAN toolhead board or are using a USB one, then you can stay on this page.*
 _________________________________________________________
 ### Flashing the Board
-Because flasing board is such a big section, I decided to move it to a different doc. ![Click Me!](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/BoardFlash.md)
-
+Because flasing board is such a big section, I decided to move it to a different doc. --> ![Click Me!](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/BoardFlash.md)
+_________________________________________________________
 ## Access the Printer
 Remember the IP address you used to SSH into your device? You'll need it again!
 
@@ -74,3 +74,8 @@ Mine is 192.168.0.19, but yours is probably different.
 
 You will find yourself on the main screen of the printer, this is where you'll be spending the most time from now on.
 
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/Mainsail-Main-Example.png)
+
+I have Crowsnest and Spoolman installed but you can ignore that for now. I'll be showing everything on Mainsail, but Fluidd should be very similar.
+_________________________________________________________
+On the left, click "MACHINE", you'll be transported to the config and file section of the printer. 
