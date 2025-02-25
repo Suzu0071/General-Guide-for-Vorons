@@ -23,6 +23,12 @@ make
 ```
 It'll take a minute to make the file.
 
+Heres how it should look for STM32 boards:
+
 ![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/Katapult-Bin-Example.png)
+
+Heres RP2040 based boards (e.g. SKR pico):
+
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/RP2040-based-Katapult-Bin.png)
 _________________________________________________________
 ### Flash Katapult
