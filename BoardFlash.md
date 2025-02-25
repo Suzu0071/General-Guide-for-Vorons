@@ -70,4 +70,4 @@ The ID of the board will be displayed (e.g. 0483:df11), copy it to a notepad.
 ```
 sudo dfu-util -R -a 0 -s 0x08000000:leave -D ~/katapult/out/katapult.bin -d 0483:df11
 ```
-Change the 0483:
+Change the 0483:df11 to your ID.
