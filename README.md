@@ -84,6 +84,22 @@ On the left, click "MACHINE", you'll be transported to the config and file secti
 
 <sup>Mine has a bunch of stuff already x:</sup>
 
-First, make a printer.cfg file:
+First, make a printer.cfg file <sup>(if one doesn't exist)</sup>:
 1. Click the little "Create File" button
-2. wadf
+   
+   ![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/Create-File-Mainsail.png)
+2. Title it "printer.cfg"
+3. Click on the file to edit it.
+4. Paste
+   ```
+   [include mainsail.cfg] #if you're using mainsail
+   [include fluidd.cfg] #if you're using fluidd
+   ```
+5. On the top right, click "Save and Restart" (if you're using a smaller screen that might not be available, so just press save and then press exit).
+
+Printer.cfg is also where you paste youre config file. Explaining the config file will take a whole book, so I'll link some websites that I usually use for making configs:
++ [Official Klipper Config Reference](https://www.klipper3d.org/Config_Reference.html#).
++ [Voron Github](https://github.com/VoronDesign)(Find your printer and there should be some sample configs there).
++ If you bought a kit, they might have their own documentation. I know that LDO does that.
++ Voron Discord, Reddit, and other platforms. As we all know, VoronDesign has a lot of followers who are always willing to help each other out!
+
