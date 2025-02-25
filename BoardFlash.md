@@ -71,7 +71,16 @@ Then, "Find MCU ID" and choose "USB (DFU)".
 The ID of the board will be displayed (e.g. 0483:df11), copy it to a notepad.
 
 **This part is important, pay attention**
+
+*For STM32 boards:*
 ```
 sudo dfu-util -R -a 0 -s 0x08000000:leave -D ~/katapult/out/katapult.bin -d 0483:df11
+```
+Change the 0483:df11 to your ID.
+
+*For RP2040 boards:*
+```
+cd ~/katapult
+make flash FLASH_DEVICE=0483:df11
 ```
 Change the 0483:df11 to your ID.
