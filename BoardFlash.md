@@ -7,3 +7,11 @@ _________________________________________________________
 ```
 cd ~ && git clone https://github.com/Arksine/katapult
 ```
+Now that Katapult is installed, run:
+```
+cd katapult
+make menuconfig
+```
+*Configure everything through the Katapult folder in Board Builds*
+
+Press q to exit and choose to save. 
