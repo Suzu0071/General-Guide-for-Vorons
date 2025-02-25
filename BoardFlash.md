@@ -22,5 +22,7 @@ make clean
 make
 ```
 It'll take a minute to make the file.
+
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/Katapult-Bin-Example.png)
 _________________________________________________________
 ### Flash Katapult
