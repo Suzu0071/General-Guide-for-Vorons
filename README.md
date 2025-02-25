@@ -78,4 +78,12 @@ You will find yourself on the main screen of the printer, this is where you'll b
 
 I have Crowsnest and Spoolman installed but you can ignore that for now. I'll be showing everything on Mainsail, but Fluidd should be very similar.
 _________________________________________________________
-On the left, click "MACHINE", you'll be transported to the config and file section of the printer. 
+On the left, click "MACHINE", you'll be transported to the config and file section of the printer.
+
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/Mainsail-Machine-Example.png)
+
+<sup>Mine has a bunch of stuff already x:</sup>
+
+First, make a printer.cfg file:
+1. Click the little "Create File" button
+2. wadf
