@@ -57,7 +57,7 @@ _________________________________________________________
 ## Flash Klipper and Find Board IDs
 **This part is important**
 
-*If you have a CAN toohead board, you'll need to follow [this guide](https://canbus.esoterical.online/) for setting up CANBus. I personally followed it and it does work (as of Feb. 2025). Reconnect back with us at "Acces the Printer" section*
+*If you have a CAN toohead board, you'll need to follow [this guide](https://canbus.esoterical.online/) for setting up CANBus. I personally followed it and it does work (as of Feb. 2025). Reconnect back with us at "[Access the Printer](https://github.com/Suzu0071/General-Guide-for-Vorons/tree/main?tab=readme-ov-file#access-the-printer)" section*
 
 *If you don't have a CAN toolhead board or are using a USB one, then you can stay on this page.*
 _________________________________________________________
@@ -71,3 +71,6 @@ Paste it into the search bar of your browser and enter:
 ![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/IP-example.png)
 
 Mine is 192.168.0.19, but yours is probably different. 
+
+You will find yourself on the main screen of the printer, this is where you'll be spending the most time from now on.
+
