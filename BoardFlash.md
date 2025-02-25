@@ -12,6 +12,15 @@ Now that Katapult is installed, run:
 cd katapult
 make menuconfig
 ```
-*Configure everything through the Katapult folder in Board Builds*
+*Common boards are in the the Katapult folder in Board Builds*
 
 Press q to exit and choose to save. 
+
+Then:
+```
+make clean
+make
+```
+It'll take a minute to make the file.
+_________________________________________________________
+### Flash Katapult
