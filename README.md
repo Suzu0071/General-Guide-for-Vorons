@@ -103,4 +103,4 @@ Printer.cfg is also where you paste youre config file. Explaining the config fil
 + If you bought a kit, they might have their own documentation. I know that LDO does that.
 + Voron Discord, Reddit, and other platforms. As we all know, VoronDesign has a lot of followers who are always willing to help each other out!
 
-When you finish your config, you can start on the next section, First Flight!
+When you finish your config, you can start on the next section, [First Flight](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/First-Flight.md)!
