@@ -61,8 +61,8 @@ _________________________________________________________
 
 *If you don't have a CAN toolhead board or are using a USB one, then you can stay on this page.*
 _________________________________________________________
-### Flash Klipper
-Through Kiauh, go to "Advanced" and "Build Only". Compile the firmware for you board, I included pictures for most common boards in the Board Builds folder c:
+### Flashing the Board
+Because flasing board is such a big section, I decided to move it to a different doc. ![Click Me!](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/BoardFlash.md)
 
 ## Access the Printer
 Remember the IP address you used to SSH into your device? You'll need it again!
