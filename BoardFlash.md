@@ -1,7 +1,7 @@
 # Board Flashing and MCU IDs
 If you have multiple boards, its advised to unplug every but one, and complete this for every board separately.
 _________________________________________________________
-## Flash Katapult
+## Katapult
 [Katapult](https://github.com/Arksine/katapult) is a utility for flashing board more easily + doing CAN bus. You're here since you wont be using a CAN board, so we won't go into that and proceed with normal board flashing c:
 
 ### Install Katapult
@@ -84,9 +84,34 @@ cd ~/katapult
 make flash FLASH_DEVICE=0483:df11
 ```
 Change the 0483:df11 to your ID.
+
+Now press RESET on the board.
 _________________________________________________________
 To check if the flashing was successful, run:
 ```
 ls /dev/serial/by-id/
 ```
+It should show a usb
+Copy that whole id, from the usb to if00, to a notepad
 
+PUT A PIC HERE
+_________________________________________________________
+## Klipper
+### Compile Klipper
+Kiauh provides us an easy way to manage everything Klipper! :D
+
+Enter Kiauh (do you remember the command?)
+
+Go to advanced and "Build only"
+
+*Some of the most common board compiles are in the Klipper folder in Board-Builds*
+
+When you are done, exit out (Q) and wait for it to finish.
+
+Now you can exit Kiauh.
+_________________________________________________________
+### Flash Klipper
+First, run this to stop klipper from interfering with our flash:
+```
+sudo service klipper stop
+```
