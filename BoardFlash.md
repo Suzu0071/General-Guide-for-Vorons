@@ -94,7 +94,7 @@ ls /dev/serial/by-id/
 It should show a usb-katapult... device.
 Copy that whole id, from the usb to if00, to a notepad.
 
-PUT A PIC HERE
+![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/katapult_ID-Example.png)
 _________________________________________________________
 ## Klipper
 ### Compile Klipper
@@ -121,7 +121,7 @@ Then, do the actual flash:
 ```
 python3 ~/katapult/scripts/flashtool.py -f ~/klipper/out/klipper.bin -d /dev/serial/by-id/meow
 ```
-But paste the ID you got from previous steps instead the "meow" :3
+But paste the ID (usb-katapult...) you got from previous steps instead the "meow" :3
 
 *Ignore the errors that will show up, if at the end it shows "Complete", everything is fine.*
 
