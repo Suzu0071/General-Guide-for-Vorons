@@ -140,4 +140,4 @@ _________________________________________________________
 
 <sub>If any problems arise, don't hesitate to reach out to the guys (and gals) at the Voron Discord, Reddit, and other platforms. Or DM me directly through Discord: @suzu00071</sub>
 
-[Next Step](https://github.com/Suzu0071/General-Guide-for-Vorons/tree/main?tab=readme-ov-file#access-the-printer) <sub>P.S. You're doing awesome!</sub>
+[Next Step](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/First-Flight.md)<sub>P.S. You're doing awesome!</sub>
