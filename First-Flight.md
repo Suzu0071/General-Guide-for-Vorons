@@ -70,4 +70,45 @@ CoreXZ:
 
 Using these pictures, determine which situation your printer is in, and modify the config file or the wiring.
 
+Before plugging and unplugging motors, power down the printer.
+
 To modify the config, find the section of the stepper you want to change (e.g. [stepper_x]), and in "dir_pin", put or remove a ! before the pin number. For example, if it was "dir_pin: PC3", you would set "dir_pin: !PC3".
+
+Run the test again after you're done configuring.
+
+_________________________________________________________
+## Endstops
+### Check Endstops
+Make sure that none of the endstops are pressed.
+
+To check endstops, we will use the QUERY_ENDSTOP command, you can run it now:
+```
+QUERY_ENDSTOP
+```
+It should return the state of all endstops, and all of them should say open.
+
+Then, manually press the X endstop (if your printer is next to you, you can press it with your finger and enter the already pasted in command in the console. If it's not, you can move the toolhead to it and make sure that it's pressing).
+
+It should return X as triggered. If it does the opposite, return triggered when it's not pressed, and open when it is pressed, you'll need to paste a ! before the sensor pin in the config (we learned how to do that in the stepper section c:).
+
+if it's always open, or always triggered, make sure that you have to config right, some endstops need a pullup resistor. A pullup is ^ and configured exactly as the inverse !, just insert it before the pin number.
+
+Repeat for Y and Z.
+## First Home :D
+Get your emergency stop ready, we'll be doing our first serious movement.
+
+Home X first:
+```
+G28 X
+```
+If no problems arise, we can continue to the Y:
+```
+G28 X Y
+```
+Now that we homed X and Y, we can do the Z endstop location. This does not relate to V0 or Switchwire, you guys can meet us at []()
+### Z Endstop Location
+
+_________________________________________________________
+## Bed
+### Bed Locating
+https://www.youtube.com/watch?v=3hocvaTHagI
