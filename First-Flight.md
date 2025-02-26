@@ -109,7 +109,19 @@ Now that we homed X and Y, we can do the Z endstop location. This does not relat
 ### Z Endstop Location
 Before doing endstop location, you need to locate the bed first. Heres a good video about it: [Voron V2.4 Z Endstop Assembly and Bed Locating guide](https://www.youtube.com/watch?v=3hocvaTHagI). It's for V2, but should work with other models too.
 ### Origin Locating
+To make this easier, remove the bed, leaving only the aluminum plate. This will help see the true corner of the plate. Make sure that the nozzle isn't touching the plate.
 
-
+Now, we need to define the 0, 0 point for X and Y axis. First, home X and Y:
+```
+G28 X Y
+```
+Now, move the toolhead to the left-most corner where the software thinks it's at 0, 0:
+```
+G90
+G1 X0 Y0 F6000
+```
++ If the nozzle is 3-5mm away from the corner, you'll need to move the aluminum plate itself, be it moving the plate itself, or the extrusions its standing on. Make sure that when you're doing this, the Z endstop is still available to the nozzle. Run the test again if you did that.
++ If the nozzle is ~1mm away from the sides of the bed, AND if the nozzle is over the bed, nothing needs to be changed.
++ If the nozzle is more then 1-2mm away from the sizes of the bed, OR if it's not over the bed, you'll need to adjust the max position in your config. 
 _________________________________________________________
 ## Bed
