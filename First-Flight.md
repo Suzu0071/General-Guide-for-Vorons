@@ -107,7 +107,6 @@ G28 X Y
 ```
 Now that we homed X and Y, we can do the Z endstop location. This does not relate to V0 or Switchwire, you guys can meet us at []()
 ### Z Endstop Location
-#### Bed Locating
 Before doing endstop location, you need to locate the bed first. Heres a good video about it: [Voron V2.4 Z Endstop Assembly and Bed Locating guide](https://www.youtube.com/watch?v=3hocvaTHagI). It's for V2, but should work with other models too.
 ### Origin Locating
 
