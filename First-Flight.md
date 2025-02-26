@@ -8,7 +8,7 @@ But first, you'll need to modify your printer.cfg a little. Add this section:
 enable_force_move: True
 ```
 You can delete it after you finish the startup.
-## Heaters
+## Heaters pt.1
 On the main screen of Mainsail/Fluidd, you should see a graph with temperatures. Make sure they're all staying at the same temperature and aren't going up or down.
 
 If the temperatures don't match, make sure you got the sensor type correct in your config file and that nothing is shorting (aka check wire integrity). If the temperature isn't staying still, **UNPLUG THE PRINTER**, and make sure you got everything plugged in where it's supposed to be (bed goes into the ssr, etc.).
@@ -105,11 +105,11 @@ If no problems arise, we can continue to the Y:
 ```
 G28 X Y
 ```
-Now that we homed X and Y, we can do the Z endstop location. This does not relate to V0 or Switchwire, you guys can meet us at []()
-### Z Endstop Location
+Now that we homed X and Y, we can do the Z endstop location. This does not relate to the Switchwire, you guys can meet us at [](). V0 builders go straight to []()
+### Bed Location
 Before doing endstop location, you need to locate the bed first. Heres a good video about it: [Voron V2.4 Z Endstop Assembly and Bed Locating guide](https://www.youtube.com/watch?v=3hocvaTHagI). It's for V2, but should work with other models too.
 ### Origin Locating
-To make this easier, remove the bed, leaving only the aluminum plate. This will help see the true corner of the plate. Make sure that the nozzle isn't touching the plate.
+To make this easier, remove the magnetic bed, leaving only the aluminum plate. This will help see the true corner of the plate. Make sure that the nozzle isn't touching the plate.
 
 Now, we need to define the 0, 0 point for X and Y axis. First, home X and Y:
 ```
@@ -122,6 +122,51 @@ G1 X0 Y0 F6000
 ```
 + If the nozzle is 3-5mm away from the corner, you'll need to move the aluminum plate itself, be it moving the plate itself, or the extrusions its standing on. Make sure that when you're doing this, the Z endstop is still available to the nozzle. Run the test again if you did that.
 + If the nozzle is ~1mm away from the sides of the bed, AND if the nozzle is over the bed, nothing needs to be changed.
-+ If the nozzle is more then 1-2mm away from the sizes of the bed, OR if it's not over the bed, you'll need to adjust the max position in your config. 
++ If the nozzle is ~1-2mm away from the sizes of the bed, OR if it's not over the bed, you'll need to adjust the max position in your config. (Only works when its 1-2mm away)
+  + For example, if the nozzle is 2mm away from the plate, and not over it, you'll go to [stepper_x/y] section and subtract 2 from the position_max (also don't forget to set the endstop_position to the same number).
+  + If the nozzle is 2mm over the plate, you'd add 2 to position_max.
+ 
+You can now put the magnetic bed back on.
+### Z Endstop Location
+***For V2, Trident, V1, Legacy:***
+
+Home X and Y:
+```
+G28 X Y
+```
+Using the movement controls in your web interface, position the nozzle straight over the Z endstop pin, and run:
+```
+M114
+```
+You will be given your homing coordinates, you will need to put them into [safe_z_home] or [homing_override] section. *Don't forget to do firmware restart.*
+
+Now you can home every axis, but have the emergency stop ready the first time. <sub>Press the home button in the controls of your web interface.</sub>
+
+***For V0:***
+
+Since the V0 uses a switch to test the bed assmebly itself, the easiest way to calibrate it is to run Z_ENDSTOP_CALIBRATE.
+
+Use the bed leveling screws and place the bed roughly in the middle of their travel. Now you'll need to run:
+```
+Z_ENDSTOP_CALIBRATE
+```
+If you're using Mainsail, a dialog box with controls will open, position the bed to the nozzle using the paper test (recommended).
+
+If you're NOT using Mainsail, you'll need to issue manual commands:
+```
+TESTZ Z=meow
+```
+Negative numbers will move the bed closer to the nozzle, positive will move the bed further away.
+
+When you are done, either press ACCEPT (in Mainsail), or just type ACCEPT in the console. To save the offset, type:
+```
+SAVE_CONFIG
+```
+The offset will be saved to the bottom of your config file.
 _________________________________________________________
-## Bed
+## Heaters pt.2
+Now we'll be testing the heaters. Make sure you have everything set correctly in the config (e.g. max bed power).
+### Hotend
+On the main screen of your web interface, use the same graph we used earlier to set temperatures for the hotend. It should be named "Extruder". Set the temperature to 60.
+
+When it passes 55, check that the hotend fan is spinning and nothing smells burnt c: You can then turn off the heater.
