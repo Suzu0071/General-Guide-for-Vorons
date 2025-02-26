@@ -49,7 +49,7 @@ Heres an example for SKR pico:
 
 Now check that the board went into DFU by running:
 ```
-lsusb
+cd ~ && lsusb
 ```
 
 STM32  boards will show up as "STM device in dfu", RP2040 will show up as "Pi RP2 Boot".
