@@ -1,6 +1,8 @@
 # Voron-Printer-Guide
 Walk through guide relating most of the things Voron c:
 
+<sup>Or not only Voron</sup>
+
 _________________________________________________________
 ## Setting up Klipper, Moonraker, and Mainsail/Fluidd
 Probably the easiest way to manage and download these is through [Kiauh](https://github.com/dw-0/kiauh). 
