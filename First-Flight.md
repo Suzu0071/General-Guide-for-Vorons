@@ -169,4 +169,55 @@ Now we'll be testing the heaters. Make sure you have everything set correctly in
 ### Hotend
 On the main screen of your web interface, use the same graph we used earlier to set temperatures for the hotend. It should be named "Extruder". Set the temperature to 60.
 
-When it passes 55, check that the hotend fan is spinning and nothing smells burnt c: You can then turn off the heater.
+When it passes 55, check that the hotend fan is spinning and nothing smells burnt c: You can then turn off the heater, either set the temperature to 0 or press the "Cooldown" button.
+### Bed
+Now do the same things for the bed heater, set the temperature to 55 and check that everything works and doesn't go up in flames. With the config from Voron github, the controller fan should start spinning when the bed is on.
+_________________________________________________________
+### PID tune
+Now we'll tune PID for hotend and bed.
+
+In the web interface console enter:
+```
+PID_CALIBRATE HEATER=heater_bed TARGET=100
+```
+This will make the bed heater go up to 100 and fluctuate about 5 degrees each way. When it finishes, it should spit out the PID settings in the console, copy them to a notepad and change them parameters in the [heater_bed] section.
+
+Now the hotend:
+```
+M106 S64
+PID_CALIBRATE HEATER=extruder TARGET=245
+```
+This will set the part cooling fan to 25% and run PID calibrate. Complete the same procedure as for the bed heater, except now modify the [extruder] section.
+_________________________________________________________
+## Bed Leveling
+### V0
+V0 doesn't have a probe so the bed leving is done by hand using the leveling knobs. Klipper has an inbuilt macro for helping with leveing:
+```
+BED_SCREWS_ADJUST
+```
+It will move the nozzle to each screw location and you should adjust the bed. If you turned the knob over 1/8 of a revolution, you should press "ADJUSTED", this means the nozzle will move back to this screw to recheck. If you're satisfied with the leveling on a screw, press "ACCEPT". Both buttons will still proceed to the next screw.
+
+You can also rerun the Z_ENDSTOP_CALIBRATE command to reset the endstop position to 0.
+### V1 & Legacy
+First, run a macro that will do the tilt for the bed:
+```
+BED_TILT
+```
+Then:
+```
+BED_SCREWS_ADJUST
+```
+This will bring the nozzle to each screw position. See more about adjusting screws in the V0 section.
+### Trident
+Trident uses a fully automatic macro:
+```
+Z_TILT_ADJUST
+```
+You shouldn't need to do anything, it will probe the specified locations and move the bed accordingly.
+### V2
+V2 also uses a fully automatic macro:
+```
+QUAD_GANTRY_LEVEL
+```
+The printer will probe specified points and automatically adjust the gantry.
+### 
