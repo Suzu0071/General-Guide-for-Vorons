@@ -93,6 +93,8 @@ It should return X as triggered. If it does the opposite, return triggered when 
 
 if it's always open, or always triggered, make sure that you have to config right, some endstops need a pullup resistor. A pullup is ^ and configured exactly as the inverse !, just insert it before the pin number.
 
+*If you are using the probe as your Z endstop, see [this](w) for setup.*
+
 Repeat for Y and Z.
 ## First Home :D
 Get your emergency stop ready, we'll be doing our first serious movement.
