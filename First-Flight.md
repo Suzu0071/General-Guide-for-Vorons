@@ -37,13 +37,13 @@ To tell the printer to use relative moves.
 
 Now for the fun part, first moves. Paste:
 ```
-G1 F4000 X10
+G1 F1000 X10
 ```
 This should move the toolhead right 10mm (if everything is setup correctly). Don't worry if it doesn't, we'll do the Y axis and then adjust everything.
 
 To move the Y, paste this:
 ```
-G1 F4000 Y10
+G1 F1000 Y10
 ```
 Y axis should've moved 10mm close to the back of the printer (for corexy) or the bed should've moved out 10mm (for switchwire).
 
