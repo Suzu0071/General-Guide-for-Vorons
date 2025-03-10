@@ -85,6 +85,8 @@ make flash FLASH_DEVICE=0483:df11
 ```
 Change the 0483:df11 to your ID.
 
+Remove the jumper if you had to put it on.
+
 Now press RESET on the board.
 _________________________________________________________
 To check if the flashing was successful, run:
