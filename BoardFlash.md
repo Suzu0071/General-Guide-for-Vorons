@@ -13,6 +13,8 @@ Now that Katapult is installed, run:
 cd katapult
 make menuconfig
 ```
+You'll have to change the settings depending on your specific board.
+
 *Common boards are in the the Katapult folder in Board Builds*
 
 Press q to exit and choose to save. 
@@ -108,7 +110,7 @@ Enter Kiauh (do you remember the command?)
 
 Go to advanced and "Build only"
 
-You'll have to change the settings depending on 
+You'll have to change the settings depending on your specific board.
 
 *Some of the most common board compiles are in the Klipper folder in Board-Builds*
 
