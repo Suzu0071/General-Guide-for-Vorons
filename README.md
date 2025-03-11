@@ -11,6 +11,10 @@ Probably the easiest way to manage and download these is through [Kiauh](https:/
 Here, we'll take a quick stroll through the installation and setup for the minimal required softwares to get your printer running.
 
 ### Download/install Kiauh
+First, we need to run some updates:
+```
+sudo apt update && sudo apt upgrade
+```
 Get or update git:
 ```
 sudo apt-get update && sudo apt-get install git -y
