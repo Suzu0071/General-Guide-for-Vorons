@@ -26,11 +26,12 @@ It'll take a minute to make the file.
 
 Heres how it should look for STM32 boards:
 
-![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/Katapult-Bin-Example.png)
+<img src="./Images/Katapult-Bin-Example.png">
 
 Heres RP2040 based boards (e.g. SKR pico):
 
-![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/RP2040-based-Katapult-Bin.png)
+<img src="./Images/RP2040-based-Katapult-Bin.png">
+
 _________________________________________________________
 ### Flash Katapult
 First, enter DFU mode:
@@ -45,7 +46,7 @@ Read the instructions for your specific board, but the process is the same as fo
 
 Heres an example for SKR pico:
 
-![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/SKR-pico-DFU.png)
+<img src="./Images/SKR-pico-DFU.png">
 
 Now check that the board went into DFU by running:
 ```
@@ -96,7 +97,8 @@ ls /dev/serial/by-id/
 It should show a usb-katapult... device.
 Copy that whole id, from the usb to if00, to a notepad.
 
-![](https://github.com/Suzu0071/General-Guide-for-Vorons/blob/main/Images/katapult_ID-Example.png)
+<img src="./Images/katapult_ID-Example.png">
+
 _________________________________________________________
 ## Klipper
 ### Compile Klipper
@@ -105,6 +107,8 @@ Kiauh provides us an easy way to manage everything Klipper! :D
 Enter Kiauh (do you remember the command?)
 
 Go to advanced and "Build only"
+
+You'll have to change the settings depending on 
 
 *Some of the most common board compiles are in the Klipper folder in Board-Builds*
 
@@ -127,7 +131,7 @@ But paste the ID (usb-katapult...) you got from previous steps instead the "meow
 
 *Ignore the errors that will show up, if at the end it shows "Complete", everything is fine.*
 
-Press RESET and run "ls /dev/serial/by-id/" to see if everything truly worked. You should now see a usb-Klipper... device. Copy that ID again, you'll be using it when you make your config file. 
+Press RESET and run `ls /dev/serial/by-id/` to see if everything truly worked. You should now see a usb-Klipper... device. Copy that ID again, you'll be using it when you make your config file. 
 
 *If you see a usb-katapult device, redo the steps for klipper compilation and flashing.*
 
